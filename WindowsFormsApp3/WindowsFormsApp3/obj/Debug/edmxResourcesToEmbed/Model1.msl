@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SinemaModelStoreContainer" CdmEntityContainer="SinemaEntities1">
+    <EntitySetMapping Name="Film">
+      <EntityTypeMapping TypeName="SinemaModel.Film">
+        <MappingFragment StoreEntitySet="Film">
+          <ScalarProperty Name="Film_Id" ColumnName="Film_Id" />
+          <ScalarProperty Name="Film_Adı" ColumnName="Film_Adı" />
+          <ScalarProperty Name="Seans_Saati" ColumnName="Seans_Saati" />
+          <ScalarProperty Name="Salon_Id" ColumnName="Salon_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Müşteri">
+      <EntityTypeMapping TypeName="SinemaModel.Müşteri">
+        <MappingFragment StoreEntitySet="Müşteri">
+          <ScalarProperty Name="Müşteri_Id" ColumnName="Müşteri_Id" />
+          <ScalarProperty Name="Ad_Soyad" ColumnName="Ad_Soyad" />
+          <ScalarProperty Name="Bilet_Sayısı" ColumnName="Bilet_Sayısı" />
+          <ScalarProperty Name="Bilet_Aralığı" ColumnName="Bilet_Aralığı" />
+          <ScalarProperty Name="Film_Id" ColumnName="Film_Id" />
+          <ScalarProperty Name="Salon_Id" ColumnName="Salon_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Salon">
+      <EntityTypeMapping TypeName="SinemaModel.Salon">
+        <MappingFragment StoreEntitySet="Salon">
+          <ScalarProperty Name="Salon_Id" ColumnName="Salon_Id" />
+          <ScalarProperty Name="Salon_Adı" ColumnName="Salon_Adı" />
+          <ScalarProperty Name="Koltuk_Sayısı" ColumnName="Koltuk_Sayısı" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SinemaModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
